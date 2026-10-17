@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -14,8 +16,6 @@ body {
     margin: auto;
     padding: 25px 20px 60px;
 }
-
-
 
 
 header {
@@ -35,14 +35,13 @@ header p {
 }
 
 
-
-
 section {
     margin-bottom: 60px;
 }
 
 section h2 {
     font-size: 30px;
+    color: #193b61;
     border-left: 6px solid #4b98cc;
     padding-left: 18px;
     margin-bottom: 30px;
@@ -50,23 +49,17 @@ section h2 {
 
 
 
-
 .activity-card {
     background-color: white;
     border: 1px solid #d5e0ea;
     border-radius: 10px;
-
     padding: 40px 38px;
-
     margin-bottom: 15px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-
-
 
 .activity-card h3 {
     font-size: 25px;
@@ -80,29 +73,83 @@ section h2 {
     color: #66809b;
 }
 
-
-
-
 .button {
     display: inline-block;
-
     background-color: #4b94c7;
     color: white;
-
     text-decoration: none;
-
     padding: 18px 25px;
-
     border-radius: 7px;
-
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
 .button:hover {
     background-color: #357dab;
 }
 
+
+
+.hands-on-practice {
+    max-width: 1180px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #193b61;
+}
+
+.hands-on-practice h2 {
+    font-size: 30px;
+    color: #193b61;
+    border-left: 6px solid #4b98cc;
+    padding-left: 18px;
+    margin-bottom: 30px;
+}
+
+
+
+.hands-on-practice .practice-item {
+    background-color: white;
+    border: 1px solid #d5e0ea;
+    border-radius: 10px;
+    padding: 40px 38px;
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hands-on-practice .practice-item h3 {
+    font-size: 25px;
+    margin: 0 0 15px;
+    color: #193b61;
+}
+
+.hands-on-practice .practice-item p {
+    margin: 0;
+    font-size: 20px;
+    color: #66809b;
+}
+
+
+
+.hands-on-practice .practice-button {
+    display: inline-block;
+    background-color: #4b94c7;
+    color: white;
+    text-decoration: none;
+    padding: 18px 25px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hands-on-practice .practice-button:hover {
+    background-color: #357dab;
+}
 
 
 @media (max-width: 700px) {
@@ -115,6 +162,11 @@ section h2 {
         font-size: 16px;
     }
 
+    section h2,
+    .hands-on-practice h2 {
+        font-size: 25px;
+    }
+
     .activity-card {
         flex-direction: column;
         align-items: flex-start;
@@ -123,7 +175,15 @@ section h2 {
 
     .button {
         width: 100%;
-        text-align: center;
     }
 
+    .hands-on-practice .practice-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .hands-on-practice .practice-button {
+        width: 100%;
+    }
 }
